@@ -8,7 +8,7 @@ data <-counts(sim)
 data <-t(data)
 batch <-colData(sim)[2]
 label <-colData(sim)[3]
-write.table(cbind(data,batch,label),"E:/study/±ÏÉè/07exprinment_data/Batch_Data.txt",quote = FALSE,row.names = FALSE, col.names = FALSE)
+write.table(cbind(data,batch,label),"Batch_Data.txt",quote = FALSE,row.names = FALSE, col.names = FALSE)
 #visualization
 sim <-normalise(sim)
 plotPCA(sim,shape_by="Batch",colour_by="Group")
